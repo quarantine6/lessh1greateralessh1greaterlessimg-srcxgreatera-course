@@ -1,0 +1,16 @@
+title: <h1>a</h1><img src=x>a
+description: <h1>a</h1><img src=x>
+template:
+  repo: lessh1greateralessh1greaterlessimg-srcxgreatera-template
+  name: lessh1greateralessh1greaterlessimg-srcxgreatera
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
